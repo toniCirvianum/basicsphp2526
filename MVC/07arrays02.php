@@ -21,6 +21,19 @@
         $capitals['Greek']='Athens';
 
         $franceCapital = $capitals['France'];
+        // No s'utiltiza per afegir valors als arrays asociatius
+        // array_push($capitals,'Andorra');
+
+        echo "<pre>";
+        print_R($capitals);
+        echo "</pre>";
+
+        $existeix = in_array('Andorra',$capitals)? "Andorra esta introduida":"L'has d'introduir";
+        echo $existeix;
+
+        foreach ($capitals as $pais => $capital) {
+            echo "La capital de $pais es $capital";
+        }
 ?>
     
 </body>
