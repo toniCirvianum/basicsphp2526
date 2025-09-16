@@ -14,6 +14,18 @@
     $fruits = ['apple', 'orange', 'melon', 'banana'];
     $fruits2 = array('apple', 'orange', 'melon', 'banana', 'lemon');
     $a = [["hola"],["adeu"]];
+    
+    echo "<pre>";
+    print_r( $fruits);
+    // echo "</pre>";
+    // echo "<pre>";
+    var_dump($fruits2);
+    echo "</pre>";
+
+    foreach ($fruits as $fruit) {
+        echo  "<li>la frutia és $fruit</li>";
+    }
+
 ?>
     
 </body>
